@@ -1,36 +1,23 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Paytone+One:400|PT+Serif:700");
 
 * {
+  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+  margin: 0px;
   height: 100%;
-  overflow-x: hidden;
 }
 
-.nav-list {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
 }
 
-.nav-list a {
+a {
   text-decoration: none;
-  color: #333;
-}
-
-header, footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #f8f8f8;
-}
-
-footer p {
-  margin: 0;
-  color: #666;
 }

@@ -1,8 +1,6 @@
 {
-  "name": "rams-ai",
-  "main": "/index.html",
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  },
-  "devDependencies": {}
+    "name": "sandpack-project",
+    "main": "/main_page.html",
+    "dependencies": {},
+    "devDependencies": {}
 }

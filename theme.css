@@ -1,20 +1,219 @@
-body, .upload-screen {
+.upload-screen {
+  background-color: rgba(255, 255, 255, 1.0);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(180deg, #d3fad7 0%, #ffffff 100%);
 }
 
 .upload-screen .div {
-  width: 90%;
-  max-width: 479px;
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 1.0);
+  background: linear-gradient(
+    180deg,
+    rgb(211, 250, 215) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  overflow-x: hidden;
+  width: 479px;
+  height: 1151px;
+  position: relative;
+}
+.upload-screen .home-button:hover{
+  background-color: beige;
+  border-radius: 20px;
+}
+.upload-screen .home-button:hover{
+  background-color: beige;
+  border-radius: 20px;
 }
 
-@media (max-width: 768px) {
-  .upload-screen .div {
-    padding: 10px;
-  }
+.upload-screen .overlap {
+  position: absolute;
+  width: 483px;
+  height: 784px;
+  top: 0;
+  left: 0;
+}
+
+.upload-screen .header {
+  position: absolute;
+  width: 483px;
+  height: 404px;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+.upload-screen .overlap-group {
+  position: relative;
+  width: 479px;
+  height: 404px;
+  background: linear-gradient(
+    180deg,
+    rgb(27.96, 180.87, 38.16) 0%,
+    rgb(244.37, 255, 250.22) 100%
+  );
+}
+
+.upload-screen .text-wrapper {
+  position: absolute;
+  width: 358px;
+  top: 30px;
+  left: 26px;
+  text-shadow: 0px 4px 4px #00000059;
+  font-family: "Paytone One", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 90px;
+  letter-spacing: -0.90px;
+  line-height: 90px;
+  white-space: nowrap;
+}
+
+.upload-screen .p {
+  position: absolute;
+  width: 447px;
+  top: 137px;
+  left: 26px;
+  background: linear-gradient(
+    180deg,
+    rgb(66, 178, 103) 0%,
+    rgb(45.58, 140.24, 77.13) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Paytone One", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 40px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+}
+
+.upload-screen .rectangle {
+  position: absolute;
+  width: 479px;
+  height: 180px;
+  top: 314px;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(226.67, 255, 251.69, 0) 0%,
+    rgb(233.58, 247.91, 214.85) 50%,
+    rgba(227, 255, 252, 0) 100%
+  );
+}
+
+.upload-screen .upload-photo {
+  position: absolute;
+  width: 438px;
+  height: 540px;
+  top: 244px;
+  left: 22px;
+}
+.upload-button-label:hover{
+  background-color: rgba(0,0,0,3);
+  opacity: 0,7;
+}
+.upload-screen .overlap-2 {
+  position: relative;
+  width: 439px;
+  height: 543px;
+  top: -2px;
+  left: -2px;
+  background-image: url(https://c.animaapp.com/hmwG1PaG/img/rectangle-11.png);
+  background-size: 100% 100%;
+}
+
+.upload-screen .text-wrapper-2 {
+  position: absolute;
+  width: 433px;
+  height: 82px;
+  top: 250px;
+  left: 4px;
+  font-family: "PT Serif", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: -0.32px;
+  line-height: 32px;
+}
+
+.upload-screen .image {
+  position: absolute;
+  width: 101px;
+  height: 81px;
+  top: 161px;
+  left: 170px;
+  object-fit: cover;
+}
+
+.upload-screen .prompt {
+  position: absolute;
+  width: 438px;
+  height: 256px;
+  top: 821px;
+  left: 22px;
+}
+
+.upload-screen .overlap-3 {
+  position: relative;
+  width: 439px;
+  height: 259px;
+  top: -2px;
+  left: -2px;
+  background-image: url(https://c.animaapp.com/hmwG1PaG/img/rectangle-14.png);
+  background-size: 100% 100%;
+}
+
+.upload-screen .text-wrapper-3 {
+  position: absolute;
+  height: 24px;
+  top: 32px;
+  left: 46px;
+  font-family: "PT Serif", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: -0.24px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.upload-screen .rectangle-2 {
+  position: absolute;
+  width: 347px;
+  height: 100px;
+  top: 94px;
+  left: 46px;
+  background-color: #fcf8f8;
+  border-radius: 30px;
+}
+
+.upload-screen .home-button {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 1082px;
+  left: 212px;
+
+}
+.upload-screen .home {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  left: 16px;
+}
+
+.upload-screen .img {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: -52px;
+  left: -2456px;
 }
