@@ -1,5 +1,5 @@
 
-.landing-page {
+.index {
   background-color: rgba(255, 255, 255, 1.0);
   display: flex;
   flex-direction: row;
@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.landing-page .overlap-wrapper {
+.index .overlap-wrapper {
   background-color: rgba(255, 255, 255, 1.0);
   background: linear-gradient(
     180deg,
@@ -19,14 +19,14 @@
   height: 1184px;
 }
 
-.landing-page .overlap {
+.index .overlap {
   position: relative;
   width: 592px;
   height: 1282px;
   left: -56px;
 }
 
-.landing-page .wood {
+.index .wood {
   position: absolute;
   width: 479px;
   height: 560px;
@@ -35,7 +35,7 @@
   object-fit: cover;
 }
 
-.landing-page .header {
+.index .header {
   position: absolute;
   width: 495px;
   height: 404px;
@@ -44,13 +44,13 @@
   background-color: transparent;
 }
 
-.landing-page .overlap-group {
+.index .overlap-group {
   position: relative;
   width: 491px;
   height: 404px;
 }
 
-.landing-page .rectangle {
+.index .rectangle {
   position: absolute;
   width: 479px;
   height: 404px;
@@ -63,7 +63,7 @@
   );
 }
 
-.landing-page .text-wrapper {
+.index .text-wrapper {
   position: absolute;
   width: 465px;
   top: 28px;
@@ -77,7 +77,7 @@
   line-height: 90px;
 }
 
-.landing-page .div {
+.index .div {
   position: absolute;
   width: 447px;
   top: 137px;
@@ -99,7 +99,7 @@
   line-height: 40px;
 }
 
-.landing-page .gradent-seperator {
+.index .gradent-seperator {
   position: absolute;
   width: 479px;
   height: 180px;
