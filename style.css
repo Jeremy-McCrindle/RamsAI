@@ -135,7 +135,7 @@
   height: 63px;
 }
 
-.landing-page .text-wrapper-2 {
+.index .text-wrapper-2 {
   position: relative;
   width: 235px;
   margin-right: -11.00px;
@@ -148,7 +148,7 @@
   line-height: 53px;
 }
 
-.landing-page .group {
+.index .group {
   position: absolute;
   width: 592px;
   height: 1218px;
@@ -156,12 +156,12 @@
   left: 0;
 }
 
-.landing-page .overlap-2 {
+.index .overlap-2 {
   position: relative;
   height: 1218px;
 }
 
-.landing-page .rectangle-2 {
+.index .rectangle-2 {
   position: absolute;
   width: 502px;
   height: 516px;
@@ -170,7 +170,7 @@
   background-color: #d9d9d9;
 }
 
-.landing-page .bowel {
+.index .bowel {
   position: absolute;
   width: 592px;
   height: 767px;
@@ -179,7 +179,7 @@
   object-fit: cover;
 }
 
-.landing-page .rectangle-3 {
+.index .rectangle-3 {
   position: absolute;
   width: 509px;
   height: 132px;
@@ -189,7 +189,7 @@
   transform: rotate(-6.10deg);
 }
 
-.landing-page .machine {
+.index .machine {
   position: absolute;
   width: 213px;
   height: 275px;
@@ -197,7 +197,7 @@
   left: 75px;
 }
 
-.landing-page .man {
+.index .man {
   position: absolute;
   width: 215px;
   height: 246px;
@@ -205,7 +205,7 @@
   left: 306px;
 }
 
-.landing-page .overlap-group-2 {
+.index .overlap-group-2 {
   position: relative;
   width: 213px;
   height: 246px;
@@ -215,7 +215,7 @@
   border-color: #dee8c6;
 }
 
-.landing-page .p {
+.index .p {
   position: absolute;
   width: 180px;
   top: 62px;
@@ -228,7 +228,7 @@
   line-height: 40px;
 }
 
-.landing-page .head {
+.index .head {
   position: absolute;
   width: 51px;
   height: 44px;
