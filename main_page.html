@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,21 +20,57 @@
           <div class="upload-photo">
             <div class="overlap-2">
               <div class="text-wrapper-2">Upload Photo</div>
-              <img class="image" src="https://c.animaapp.com/hmwG1PaG/img/image-1@2x.png" />
+              <!-- Use the <input type="file"> to trigger camera access -->
+              <input type="file" accept="image/*" id="uploadCamera" style="display:none;" capture="camera" />
+              <button onclick="document.getElementById('uploadCamera').click();" style="background-color: transparent; border: none; cursor: pointer;">
+                <img class="image" src="https://c.animaapp.com/hmwG1PaG/img/image-1@2x.png" />
+              </button>
             </div>
           </div>
         </div>
         <div class="prompt">
           <div class="overlap-3">
             <p class="text-wrapper-3">What do you want to improve?</p>
-            <div class="rectangle-2"></div>
+            <div class="rectangle-2">
+              <input class="text-input" type="text" placeholder="Enter your text here" />
+            </div>
           </div>
         </div>
-        <div class="home-button">
-          <img class="home" src="https://c.animaapp.com/hmwG1PaG/img/home-05.svg" />
-          <img class="img" src="img/rectangle-17.svg" />
-        </div>
+        <a href="landing_page.html" style="text-decoration: none;">
+          <div class="home-button">
+            <img class="home" src="https://c.animaapp.com/hmwG1PaG/img/home-05.svg" />
+            <img class="img" src="img/rectangle-17.svg" />
+          </div>
+        </a>
       </div>
     </div>
+
+    <script>
+      // gets input value
+      document.querySelector('.text-input').addEventListener('keydown', function(event) {
+        if (event.key === "Enter") {
+          var userInput = this.value; 
+          console.log("User Input: " + userInput); // stores it 
+
+        
+          window.location.href = 'feedback.html';
+        }
+      });
+
+      document.getElementById('uploadCamera').addEventListener('change', function(event) {
+        const file = event.target.files[0]; // get the uploaded file
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function(e) {
+            const imgElement = document.createElement('img');
+            imgElement.src = e.target.result;
+            imgElement.style.width = '100px'; // set image size
+            imgElement.style.height = '100px'; // set image size
+            document.body.appendChild(imgElement); // append the image to the page or replace
+          };
+          reader.readAsDataURL(file); // read the file as a data URL
+        }
+      });
+    </script>
   </body>
 </html>

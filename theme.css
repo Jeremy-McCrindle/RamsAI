@@ -7,7 +7,7 @@
 }
 
 .upload-screen .div {
-  background-color: rgba(255, 255, 255, 1.0);
+  background-color: #ffffff;
   background: linear-gradient(
     180deg,
     rgb(211, 250, 215) 0%,
@@ -17,10 +17,6 @@
   width: 479px;
   height: 1151px;
   position: relative;
-}
-.upload-screen .home-button:hover{
-  background-color: beige;
-  border-radius: 20px;
 }
 .upload-screen .home-button:hover{
   background-color: beige;
@@ -113,10 +109,7 @@
   top: 244px;
   left: 22px;
 }
-.upload-button-label:hover{
-  background-color: rgba(0,0,0,3);
-  opacity: 0,7;
-}
+
 .upload-screen .overlap-2 {
   position: relative;
   width: 439px;
@@ -126,6 +119,7 @@
   background-image: url(https://c.animaapp.com/hmwG1PaG/img/rectangle-11.png);
   background-size: 100% 100%;
 }
+
 
 .upload-screen .text-wrapper-2 {
   position: absolute;
@@ -141,7 +135,10 @@
   letter-spacing: -0.32px;
   line-height: 32px;
 }
-
+.upload-screen ,.upload-photo button:hover .image{
+  opacity: 0.7;
+  transition: opacity 0.3 ease;
+}
 .upload-screen .image {
   position: absolute;
   width: 101px;
@@ -190,8 +187,19 @@
   height: 100px;
   top: 94px;
   left: 46px;
-  background-color: #fcf8f8;
+  background-color: #ffffff;
   border-radius: 30px;
+  padding: 21px;
+}
+
+.upload-screen .rectangle-2 input.text-input{
+  padding: 20px;
+  border: none;
+  width: 300px;
+  font-size: 24px;
+  text-align: center;
+
+  border-radius: 15px;
 }
 
 .upload-screen .home-button {
