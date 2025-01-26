@@ -1,4 +1,11 @@
-html, body {
+@import url("https://fonts.googleapis.com/css?family=Paytone+One:400|PT+Serif:700");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -10,12 +17,6 @@ button:focus-visible {
   outline: 2px solid #4a90e2;
 }
 
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-
-  button {
-    padding: 8px 12px;
-  }
+a {
+  text-decoration: none;
 }
